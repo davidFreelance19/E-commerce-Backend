@@ -7,6 +7,7 @@ import cors from "cors";
 import path from "path";
 import routerUsuario from "./routes/usuarioRoutes.js";
 import routerProducto from "./routes/productoRoutes.js";
+import routerPublicidad from "./routes/publicidadRoutes.js";
 const app = express();
 
 app.use(express.json()); // Metodo para poder procesar informacion de tipo json
@@ -31,6 +32,7 @@ const PORT = process.env.PORT || 4000; // process.env.PORT se asgina de manera a
 
 app.use("/api/usuarios", routerUsuario);
 app.use("/api/productos", routerProducto);
+app.use("/api/publicidad", routerPublicidad);
 app.listen(PORT, () => {
 	console.log("servidor corriendo desde el puerto", PORT);
 });

@@ -1,0 +1,24 @@
+# Ignorar salidas de compilación
+build/
+dist/
+
+# Ignorar archivos del sistema y del editor
+*.log
+*.tmp
+.vscode/
+.idea/
+
+# Ignorar información confidencial
+config.ini
+secrets.json
+.env
+
+# Ignorar archivos en un directorio específico
+mi_directorio/archivos_confidenciales/
+
+# Ignorar tipos de archivos específicos
+*.csv
+*.pdf
+
+# Ignorar la carpeta de dependencias de Node.js
+node_modules/
